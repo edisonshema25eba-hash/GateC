@@ -1,186 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceX</title>
-    <!-- Linking official SpaceX CSS -->
-    <link rel="stylesheet" href="https://www.spacex.com/styles.7beb78571ac01494.css">
-    <link rel="stylesheet" href="custom.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Main Navigation -->
-<nav class="black-overlay">
-  <div class="top-bar">
-    <div class="spacex-logo">
-      <a href="/"><img src="https://www.spacex.com/assets/images/logo_white.png" width="147" alt="SpaceX"></a>
-    </div>
-    <div class="header-button">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" transform="scale(0.025)"/></svg>
+
+<!-- TOP NAVIGATION -->
+<nav id="nav" aria-label="Main navigation">
+  <div class="nav-left">
+    <a href="#" class="nav-logo" aria-label="SpaceX">
+      <img src="Media/photos/illustration-deep-space-spacex-logo-over-vector-planet-195641418-removebg-preview.png" alt="SpaceX">
+    </a>
+    <div class="nav-links">
+      <a href="#vehicles">VEHICLES</a>
+      <a href="#human-spaceflight">HUMAN SPACEFLIGHT</a>
+      <a href="#starlink">STARLINK</a>
+      <a href="#">STARSHIELD</a>
+      <a href="#">xAI</a>
+      <a href="#">TERAFAB</a>
+      <a href="#">COMPANY</a>
+      <a href="#">SHOP</a>
     </div>
   </div>
-  <div class="nav-links">
-    <div class="nav-group">
-      <span class="group-title">Vehicles</span>
-      <a href="#starship">Starship</a>
-      <a href="#falcon9">Falcon 9</a>
-      <a href="#dragon">Dragon</a>
+  <div class="nav-right">
+    <div class="launch-timer">
+      <p class="timer-label">CURRENT LAUNCH</p>
+      <p class="timer-value">T+00:36:08</p>
     </div>
-    <div class="nav-group">
-      <span class="group-title">Human Spaceflight</span>
-      <a href="#mars">Mars</a>
-      <a href="#missions">Missions</a>
-    </div>
-    <div class="menu-header"><a href="https://starlink.com">Starlink</a></div>
-    <div class="nav-group">
-      <span class="group-title">Company</span>
-      <a href="#about">About</a>
-      <a href="#careers">Careers</a>
-    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<div class="app-background">
-    <!-- Hero Section 1: Starship -->
-    <section class="section">
-        <span class="video-wrapper full-video">
-            <video autoplay loop muted playsinline src="media/videos/Leading_Launch_Service_Mobile_02email_c06f4154a8.mp4"></video>
-        </span>
-        <div class="section-inner hero-content slide-up">
-            <div class="inner-left-bottom">
-                <span style="font-size:0.9rem;opacity:0.65;text-transform:uppercase;letter-spacing:2px;display:block;margin-bottom:20px">MAY 22, 2026</span>
-                <h2 class="reveal-header">Starship's Twelfth Flight Test</h2>
-                <div class="reveal-button" style="margin-top:28px">
-                    <a class="btn" href="#starship">
-                        <span class="hover"></span>
-                        <span class="text">Watch</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="dim" id="dim"></div>
 
-    <!-- Hero Section 2: Multiplanetary -->
-    <section class="section">
-        <span class="video-wrapper full-video">
-            <video autoplay loop muted playsinline src="media/videos/Mobile_v4_HB_e1d2eda88f.mp4"></video>
-        </span>
-        <div class="section-inner hero-content slide-up">
-            <div class="inner-left-bottom">
-                <h2 class="reveal-header">Making Life Multiplanetary</h2>
-                <p class="reveal-subheader">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
-                <div class="reveal-button">
-                    <a class="btn" href="#mars">
-                        <span class="hover"></span>
-                        <span class="text">Explore Mars</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<aside class="sidebar" id="sidebar" aria-hidden="true" aria-label="Site navigation">
+  <div class="sidebar-head">
+    <img src="https://www.spacex.com/assets/images/logo_white.png" alt="SpaceX">
+    <button class="close-btn" id="closeBtn" aria-label="Close menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-group">
+      <p class="nav-group-label">Vehicles</p>
+      <a href="#starship">Starship</a>
+      <a href="#falcon9">Falcon 9</a>
+      <a href="#falconheavy">Falcon Heavy</a>
+      <a href="#dragon">Dragon</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Human Spaceflight</p>
+      <a href="#multiplanetary">Making Life Multiplanetary</a>
+      <a href="#missions">Missions</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Connectivity</p>
+      <a href="#starlink">Starlink</a>
+    </div>
+    <div class="nav-group">
+      <p class="nav-group-label">Company</p>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+    </div>
+  </nav>
+</aside>
 
-    <!-- Vehicles Section -->
-    <section style="padding:90px 48px;background:#000">
-        <div style="max-width:1400px;margin:0 auto">
-            <h2 class="section-title slide-up">Our Vehicles</h2>
-            <div class="cards">
-                <article class="card fade-in">
-                    <div class="card-media">
-                        <video autoplay loop muted playsinline src="media/videos/Starlink_12_10_20250428_Deploy_website_MOBILE_02_6c0f367324.mp4"></video>
-                    </div>
-                    <div class="card-body">
-                        <h3>Starship</h3>
-                        <p>Fully reusable spacecraft for missions to Mars, Moon, and beyond.</p>
-                    </div>
-                </article>
+<!-- SECTION 1: Starship -->
+<section class="section" id="starship">
+  <div class="section-bg">
+    <video autoplay loop muted playsinline preload="auto">
+      <source src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="section-content">
+    <p class="section-label">May 22, 2026</p>
+    <h1 class="section-title">Starship's Twelfth<br>Flight Test</h1>
+    <div class="btn-group">
+      <a href="https://www.spacex.com/launches/starship-flight-12" class="btn" target="_blank" rel="noopener">Watch</a>
+    </div>
+  </div>
+</section>
 
-                <article class="card fade-in">
-                    <div class="card-media">
-                        <img src="media/photos/Advancing_Human_Spaceflight_Mobile_af242fde31.jpg" alt="Falcon 9"/>
-                    </div>
-                    <div class="card-body">
-                        <h3>Falcon 9</h3>
-                        <p>The world's most reliable and frequently-launched orbital rocket.</p>
-                    </div>
-                </article>
+<!-- SECTION 2: Making Life Multiplanetary -->
+<section class="section" id="multiplanetary">
+  <div class="section-bg">
+    <video autoplay loop muted playsinline preload="auto">
+      <source src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="section-content">
+    <h2 class="section-title">Making Life<br>Multiplanetary</h2>
+    <p class="section-body">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
+    <div class="btn-group">
+      <a href="https://www.spacex.com/humanspaceflight/mars" class="btn" target="_blank" rel="noopener">Explore</a>
+    </div>
+  </div>
+</section>
 
-                <article class="card fade-in">
-                    <div class="card-media">
-                        <img src="media/photos/SLC_4_E_600x600_24dd9e969c.jpg" alt="Dragon"/>
-                    </div>
-                    <div class="card-body">
-                        <h3>Dragon</h3>
-                        <p>The only spacecraft currently flying humans to and from the ISS.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+<!-- SECTION 3: Revolutionizing Space Technology -->
+<section class="section" id="starship-tech">
+  <div class="section-bg">
+    <img src="https://sxcontent9668.azureedge.us/cms-assets/assets/Revolutionizing_Space_Tech_Desktop_ec67ad03c2.jpg"
+         alt="Starship on the launch pad" loading="lazy">
+  </div>
+  <div class="section-content">
+    <h2 class="section-title">Revolutionizing<br>Space Technology</h2>
+    <p class="section-body">SpaceX's Starship spacecraft and Super Heavy rocket is a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars, and beyond.</p>
+    <div class="btn-group">
+      <a href="https://www.spacex.com/vehicles/starship" class="btn" target="_blank" rel="noopener">Learn More</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Starlink Section -->
-    <section id="starlink" style="position:relative;min-height:70vh;display:flex;align-items:center;padding:90px 48px;background:linear-gradient(135deg, #0a0a0a 0%, #111 100%)">
-        <video style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.3;z-index:0" autoplay loop muted playsinline src="media/videos/Starlink_12_10_20250428_Deploy_website_MOBILE_02_6c0f367324.mp4"></video>
-        <div style="max-width:700px;z-index:2;position:relative">
-            <span class="section-label slide-in">Connectivity</span>
-            <h2 class="section-title slide-up">Starlink</h2>
-            <p style="font-size:1.1rem;opacity:0.9;margin-bottom:30px;line-height:1.7;max-width:600px">Global broadband internet from space — high speed, low latency satellite internet anywhere on Earth.</p>
-            <a class="btn" href="https://starlink.com">
-                <span class="hover"></span>
-                <span class="text">Visit Starlink</span>
-            </a>
-        </div>
-    </section>
+<!-- SECTION 4: World's Leading Launch Service -->
+<section class="section" id="falcon9">
+  <div class="section-bg">
+    <video autoplay loop muted playsinline preload="auto">
+      <source src="https://sxcontent9668.azureedge.us/cms-assets/assets/Leading_Launch_Service_Mobile_02email_c06f4154a8.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="section-content">
+    <h2 class="section-title">World's Leading<br>Launch Service<br>Provider</h2>
+    <p class="section-body">SpaceX leads the world in launches with its reliable, reusable rockets and is developing the fully and rapidly reusable rockets necessary to transform humanity's ability to access space.</p>
+    <div class="btn-group">
+      <a href="https://www.spacex.com/rideshare" class="btn" target="_blank" rel="noopener">Reserve Your Ride</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Latest Launches Section -->
-    <section id="launches" style="padding:90px 48px;background:#0a0a0a">
-        <div style="max-width:1400px;margin:0 auto">
-            <h2 class="section-title slide-up">Recent Launches & Missions</h2>
-            <div class="launches-grid">
-                <div class="launch-item fade-in">
-                    <img src="media/photos/Leading_Launch_Service_Mobile_02_41fdea4331.jpg" alt="Launch"/>
-                    <div class="launch-date">Starship Flight 12</div>
-                </div>
-                <div class="launch-item fade-in">
-                    <video autoplay loop muted playsinline src="media/videos/Leading_Launch_Service_Mobile_02email_c06f4154a8.mp4"></video>
-                    <div class="launch-date">May 22, 2026</div>
-                </div>
-                <div class="launch-item fade-in">
-                    <video autoplay loop muted playsinline src="media/videos/Mobile_v4_HB_e1d2eda88f.mp4"></video>
-                    <div class="launch-date">Mars Mission</div>
-                </div>
-                <div class="launch-item fade-in">
-                    <img src="media/photos/Revolutionizing_Space_Tech_Mobile_45093b17b7.jpg" alt="Launch"/>
-                    <div class="launch-date">Falcon 9</div>
-                </div>
-                <div class="launch-item fade-in">
-                    <video autoplay loop muted playsinline src="media/videos/Starlink_12_10_20250428_Deploy_website_MOBILE_02_6c0f367324.mp4"></video>
-                    <div class="launch-date">Dragon Mission</div>
-                </div>
-                <div class="launch-item fade-in">
-                    <img src="media/photos/Delivering_Highspeed_Mobile_86f0698604.jpg" alt="Launch"/>
-                    <div class="launch-date">Starshield</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- SECTION 5: Advancing Human Spaceflight -->
+<section class="section" id="dragon">
+  <div class="section-bg">
+    <img src="https://sxcontent9668.azureedge.us/cms-assets/assets/Advancing_Human_Spaceflight_Desktop_61c8ba1c67.jpg"
+         alt="Crew Dragon in orbit" loading="lazy">
+  </div>
+  <div class="section-content">
+    <h2 class="section-title">Advancing Human<br>Spaceflight</h2>
+    <p class="section-body">Since returning human spaceflight capabilities to the United States in 2020, SpaceX is helping build a new era where not just hundreds of people, but thousands and ultimately millions will be able to explore space.</p>
+    <div class="btn-group">
+      <a href="https://www.spacex.com/humanspaceflight" class="btn" target="_blank" rel="noopener">Join a Mission</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Mission Section -->
-    <section id="mission" class="featured" style="background:url('media/photos/Revolutionizing_Space_Tech_Mobile_45093b17b7.jpg') center/cover no-repeat; padding:90px 48px">
-        <video style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.4;z-index:0" autoplay loop muted playsinline src="media/videos/Mobile_v4_HB_e1d2eda88f.mp4"></video>
-        <div class="featured .content slide-up">
-            <span class="section-label">Our Mission</span>
-            <h2>Making Humanity a Multiplanetary Species</h2>
-            <p>SpaceX designs, manufactures and launches the world's most advanced rockets and spacecraft. We're committed to making life multiplanetary by enabling human settlements on other planets.</p>
-            <div class="reveal-button">
-                <a class="btn" href="#mission">
-                    <span class="hover"></span>
-                    <span class="text">Read Our Story</span>
-                </a>
-            </div>
-        </div>
-    </section>
+<!-- SECTION 6: Starlink -->
+<section class="section" id="starlink">
+  <div class="section-bg">
+    <video id="starlink-video" autoplay loop muted playsinline preload="auto">
+      <source src="Media/videos/Starlink_12_10_20250428_Deploy_website_MOBILE_02_6c0f367324.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="section-content starlink-content">
+    <h2 class="section-title">Delivering<br>High-Speed Internet<br>From Space</h2>
+    <p class="section-body">Starlink is the world's most advanced satellite constellation in low-Earth orbit, delivering reliable broadband internet capable of supporting streaming, online gaming, video calls, and more.</p>
+    <div class="btn-group">
+      <a href="https://www.starlink.com/" class="btn btn-white" target="_blank" rel="noopener">Order Now</a>
+    </div>
+  </div>
+</section>
 
-    
-</div>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links-row">
+    <a href="#">Careers</a>
+    <a href="#">Updates</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Suppliers</a>
+    <a href="#">Investors</a>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 SpaceX</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Slow down Starlink video for magical effect
+  const starlinkVideo = document.getElementById('starlink-video');
+  if (starlinkVideo) {
+    starlinkVideo.playbackRate = 0.35;
+  }
+</script>
 </body>
 </html>
