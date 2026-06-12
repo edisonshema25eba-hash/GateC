@@ -8,87 +8,215 @@
     <link rel="stylesheet" href="https://www.spacex.com/styles.7beb78571ac01494.css">
     <link rel="stylesheet" href="custom.css">
 </head>
-<body><!-- Main Overlay Navigation -->
+<body>
+<!-- Main Navigation -->
 <nav class="black-overlay">
   <div class="top-bar">
     <div class="spacex-logo">
       <a href="/"><img src="https://www.spacex.com/assets/images/logo_white.png" width="147" alt="SpaceX"></a>
     </div>
-    <!-- Close Button -->
     <div class="header-button">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" transform="scale(0.025)"/></svg>
     </div>
   </div>
-
   <div class="nav-links">
-    <!-- Vehicles Group -->
     <div class="nav-group">
       <span class="group-title">Vehicles</span>
-      <a href="/vehicles/starship/">Starship</a>
-      <a href="/vehicles/dragon/">Dragon</a>
-      <a href="/vehicles/falcon-9/">Falcon 9</a>
-      <a href="/vehicles/falcon-heavy/">Falcon Heavy</a>
+      <a href="#starship">Starship</a>
+      <a href="#falcon9">Falcon 9</a>
+      <a href="#dragon">Dragon</a>
     </div>
-
-    <!-- Human Spaceflight Group -->
     <div class="nav-group">
       <span class="group-title">Human Spaceflight</span>
-      <a href="/humanspaceflight/overview/">Overview</a>
-      <a href="/humanspaceflight/mars/">Mars & Beyond</a>
+      <a href="#mars">Mars</a>
+      <a href="#missions">Missions</a>
     </div>
-
-    <!-- Other Links -->
     <div class="menu-header"><a href="https://starlink.com">Starlink</a></div>
-    <div class="menu-header"><a href="/starshield">Starshield</a></div>
-    
-    <!-- Company Group -->
     <div class="nav-group">
       <span class="group-title">Company</span>
-      <a href="/mission/">Mission</a>
-      <a href="/careers/">Careers</a>
+      <a href="#about">About</a>
+      <a href="#careers">Careers</a>
     </div>
   </div>
 </nav>
 
 <div class="app-background">
-    <app-root>
-        <!-- Hero Section 1: Starship -->
-        <div class="section">
-            <span class="video-wrapper full-video">
-                <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4"></video>
-            </span>
-            <div class="section-inner hero-content">
-                <div class="inner-left-bottom">
-                    <h2 class="reveal-header">Starship's Twelfth Flight</h2>
-                    <div class="reveal-button">
-                        <a class="btn" href="/launches/">
-                            <span class="hover"></span>
-                            <span class="text">Watch</span>
-                        </a>
-                    </div>
+    <!-- Hero Section 1: Starship -->
+    <section class="section">
+        <span class="video-wrapper full-video">
+            <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4"></video>
+        </span>
+        <div class="section-inner hero-content slide-up">
+            <div class="inner-left-bottom">
+                <h2 class="reveal-header">Starship's Twelfth Flight</h2>
+                <p class="reveal-subheader">The most powerful rocket ever built, enabling humans to explore new worlds.</p>
+                <div class="reveal-button">
+                    <a class="btn" href="#starship">
+                        <span class="hover"></span>
+                        <span class="text">Learn More</span>
+                    </a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Hero Section 2: Multiplanetary (Inspected uid 591) -->
-        <div id="section-0" class="section">
-            <span class="video-wrapper full-video">
-                <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4"></video>
-            </span>
-            <div class="section-inner hero-content">
-              <div class="hero inner-left-bottom">
-                    <h2 class="reveal-header">Making life multiplanetary</h2>
-                    <p class="reveal-subheader">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
-                    <div class="reveal-button">
-                        <a class="btn" href="/human-spaceflight/mars/">
-                            <span class="hover"></span>
-                            <span class="text">Learn More</span>
-                        </a>
-                    </div>
+    <!-- Hero Section 2: Multiplanetary -->
+    <section class="section">
+        <span class="video-wrapper full-video">
+            <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4"></video>
+        </span>
+        <div class="section-inner hero-content slide-up">
+            <div class="inner-left-bottom">
+                <h2 class="reveal-header">Making Life Multiplanetary</h2>
+                <p class="reveal-subheader">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
+                <div class="reveal-button">
+                    <a class="btn" href="#mars">
+                        <span class="hover"></span>
+                        <span class="text">Explore Mars</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </app-root>
-    </div>
-    </body>
+    </section>
+
+    <!-- Vehicles Section -->
+    <section style="padding:60px 48px;background:#000">
+        <div style="max-width:1400px;margin:0 auto">
+            <h2 class="section-title slide-up">Our Vehicles</h2>
+            <div class="cards">
+                <article class="card fade-in">
+                    <div class="card-media">
+                        <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4"></video>
+                    </div>
+                    <div class="card-body">
+                        <h3>Starship</h3>
+                        <p>Fully reusable spacecraft for missions to Mars, Moon, and beyond.</p>
+                    </div>
+                </article>
+
+                <article class="card fade-in">
+                    <div class="card-media">
+                        <img src="https://www.spacex.com/assets/images/logo_white.png" alt="Falcon 9"/>
+                    </div>
+                    <div class="card-body">
+                        <h3>Falcon 9</h3>
+                        <p>The world's most reliable and frequently-launched orbital rocket.</p>
+                    </div>
+                </article>
+
+                <article class="card fade-in">
+                    <div class="card-media">
+                        <img src="https://www.spacex.com/assets/images/logo_white.png" alt="Dragon"/>
+                    </div>
+                    <div class="card-body">
+                        <h3>Dragon</h3>
+                        <p>The only spacecraft currently flying humans to and from the ISS.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Starlink Section -->
+    <section id="starlink" style="position:relative;min-height:70vh;display:flex;align-items:center;padding:60px 48px;background:linear-gradient(135deg, #0a0a0a 0%, #111 100%)">
+        <video style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.3;z-index:0" autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4"></video>
+        <div style="max-width:700px;z-index:2;position:relative">
+            <span class="section-label slide-in">Connectivity</span>
+            <h2 class="section-title slide-up">Starlink</h2>
+            <p style="font-size:1.1rem;opacity:0.9;margin-bottom:30px;line-height:1.7;max-width:600px">Global broadband internet from space — high speed, low latency satellite internet anywhere on Earth.</p>
+            <a class="btn" href="https://starlink.com">
+                <span class="hover"></span>
+                <span class="text">Visit Starlink</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Latest Launches Section -->
+    <section id="launches" style="padding:60px 48px;background:#0a0a0a">
+        <div style="max-width:1400px;margin:0 auto">
+            <h2 class="section-title slide-up">Recent Launches & Missions</h2>
+            <div class="launches-grid">
+                <div class="launch-item fade-in">
+                    <img src="https://www.spacex.com/assets/images/logo_white.png" alt="Launch"/>
+                    <div class="launch-date">Starship Flight 12</div>
+                </div>
+                <div class="launch-item fade-in">
+                    <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4"></video>
+                    <div class="launch-date">May 22, 2026</div>
+                </div>
+                <div class="launch-item fade-in">
+                    <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4"></video>
+                    <div class="launch-date">Mars Mission</div>
+                </div>
+                <div class="launch-item fade-in">
+                    <img src="https://www.spacex.com/assets/images/logo_white.png" alt="Launch"/>
+                    <div class="launch-date">Falcon 9</div>
+                </div>
+                <div class="launch-item fade-in">
+                    <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4"></video>
+                    <div class="launch-date">Dragon Mission</div>
+                </div>
+                <div class="launch-item fade-in">
+                    <img src="https://www.spacex.com/assets/images/logo_white.png" alt="Launch"/>
+                    <div class="launch-date">Starshield</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="featured" style="background:url('https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4') center/cover no-repeat">
+        <video style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.4;z-index:0" autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4"></video>
+        <div class="featured .content slide-up">
+            <span class="section-label">Our Mission</span>
+            <h2>Making Humanity a Multiplanetary Species</h2>
+            <p>SpaceX designs, manufactures and launches the world's most advanced rockets and spacecraft. We're committed to making life multiplanetary by enabling human settlements on other planets.</p>
+            <div class="reveal-button">
+                <a class="btn" href="#mission">
+                    <span class="hover"></span>
+                    <span class="text">Read Our Story</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Products</h4>
+                <a href="#starship">Starship</a>
+                <a href="#falcon9">Falcon 9</a>
+                <a href="#falcon-heavy">Falcon Heavy</a>
+                <a href="#dragon">Dragon</a>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <a href="#launches">Launches</a>
+                <a href="#rideshare">Rideshare</a>
+                <a href="#starshield">Starshield</a>
+                <a href="https://starlink.com">Starlink</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="#about">About</a>
+                <a href="#careers">Careers</a>
+                <a href="#press">Press</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Locations</h4>
+                <a href="#">Boca Chica, TX</a>
+                <a href="#">McGregor, TX</a>
+                <a href="#">Hawthorne, CA</a>
+                <a href="#">Washington, DC</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SpaceX. All rights reserved. | <a href="#" style="opacity:0.7">Privacy</a> | <a href="#" style="opacity:0.7">Terms</a></p>
+        </div>
+    </footer>
+
+</div>
+</body>
 </html>

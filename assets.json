@@ -1,0 +1,12 @@
+{
+  "starship_video": "https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4",
+  "mars_video": "https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4",
+  "falcon_image": "https://www.spacex.com/assets/images/logo_white.png",
+  "placeholders": {
+    "dragon_image": "replace-with-dragon-image-url",
+    "starship_gallery": [
+      "replace-with-image-1",
+      "replace-with-image-2"
+    ]
+  }
+}
