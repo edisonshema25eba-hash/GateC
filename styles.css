@@ -68,6 +68,7 @@ a {
   flex: 1;
 }
 
+
 .nav-logo img {
   height: 120px;
   display: block;
@@ -402,6 +403,13 @@ a {
 
 /* STARLINK SECTION - RIGHT ALIGN */
 .starlink-content {
+  padding: 0 52px 84px 0 !important;
+  margin-left: auto;
+  max-width: 600px;
+}
+
+/* TOP-RIGHT CONTENT POSITIONING */
+.top-right-content {
   padding: 0 52px 84px 0 !important;
   margin-left: auto;
   max-width: 600px;
