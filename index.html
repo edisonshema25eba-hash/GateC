@@ -6,13 +6,7 @@
     <title>SpaceX</title>
     <!-- Linking official SpaceX CSS -->
     <link rel="stylesheet" href="https://www.spacex.com/styles.7beb78571ac01494.css">
-    <style>
-      /* Make section media act as full-bleed backgrounds */
-      .section{ position:relative; overflow:hidden; min-height:60vh; display:block; }
-      .video-wrapper, .image-wrapper{ position:absolute; inset:0; z-index:0; display:block; }
-      .video-wrapper video, .image-wrapper img{ width:100%; height:100%; object-fit:cover; display:block; }
-      .section-inner{ position:relative; z-index:1; }
-    </style>
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body><!-- Main Overlay Navigation -->
 <nav class="black-overlay">
@@ -63,7 +57,7 @@
             <span class="video-wrapper full-video">
                 <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4"></video>
             </span>
-            <div class="section-inner">
+            <div class="section-inner hero-content">
                 <div class="inner-left-bottom">
                     <h2 class="reveal-header">Starship's Twelfth Flight</h2>
                     <div class="reveal-button">
@@ -81,8 +75,8 @@
             <span class="video-wrapper full-video">
                 <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4"></video>
             </span>
-            <div class="section-inner">
-                <div class="hero inner-left-bottom">
+            <div class="section-inner hero-content">
+              <div class="hero inner-left-bottom">
                     <h2 class="reveal-header">Making life multiplanetary</h2>
                     <p class="reveal-subheader">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
                     <div class="reveal-button">
@@ -94,7 +88,6 @@
                 </div>
             </div>
         </div>
-    </app-root>
     </app-root>
     </div>
     </body>
