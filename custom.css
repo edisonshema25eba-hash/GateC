@@ -12,7 +12,10 @@ nav .nav-links{display:flex;gap:18px;align-items:center}
 nav .nav-links a{color:#fff;text-decoration:none;font-weight:600;opacity:0.95}
 
 /* App spacing so content isn't hidden under nav */
-.app-background{margin-top:72px}
+.app-background{margin-top:80px}
+
+/* Make navigation visually stick and readable on scroll */
+nav.black-overlay{backdrop-filter:blur(6px);box-shadow:0 4px 18px rgba(0,0,0,0.45)}
 
 /* Sections and media */
 .section{position:relative;min-height:100vh;display:flex;align-items:flex-end}
