@@ -3,11 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SpaceX</title>
+    <!-- Linking official SpaceX CSS -->
+    <link rel="stylesheet" href="https://www.spacex.com/styles.7beb78571ac01494.css">
+    <style>
+      /* Make section media act as full-bleed backgrounds */
+      .section{ position:relative; overflow:hidden; min-height:60vh; display:block; }
+      .video-wrapper, .image-wrapper{ position:absolute; inset:0; z-index:0; display:block; }
+      .video-wrapper video, .image-wrapper img{ width:100%; height:100%; object-fit:cover; display:block; }
+      .section-inner{ position:relative; z-index:1; }
+    </style>
 </head>
-<body>
-    <h1>Hello World</h1>
-    <p>This is a simple paragraph.</p>
+<body><!-- Main Overlay Navigation -->
+<nav class="black-overlay">
+  <div class="top-bar">
+    <div class="spacex-logo">
+      <a href="/"><img src="https://www.spacex.com/assets/images/logo_white.png" width="147" alt="SpaceX"></a>
+    </div>
+    <!-- Close Button -->
+    <div class="header-button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" transform="scale(0.025)"/></svg>
+    </div>
+  </div>
 
-</body>
-</html
+  <div class="nav-links">
+    <!-- Vehicles Group -->
+    <div class="nav-group">
+      <span class="group-title">Vehicles</span>
+      <a href="/vehicles/starship/">Starship</a>
+      <a href="/vehicles/dragon/">Dragon</a>
+      <a href="/vehicles/falcon-9/">Falcon 9</a>
+      <a href="/vehicles/falcon-heavy/">Falcon Heavy</a>
+    </div>
+
+    <!-- Human Spaceflight Group -->
+    <div class="nav-group">
+      <span class="group-title">Human Spaceflight</span>
+      <a href="/humanspaceflight/overview/">Overview</a>
+      <a href="/humanspaceflight/mars/">Mars & Beyond</a>
+    </div>
+
+    <!-- Other Links -->
+    <div class="menu-header"><a href="https://starlink.com">Starlink</a></div>
+    <div class="menu-header"><a href="/starshield">Starshield</a></div>
+    
+    <!-- Company Group -->
+    <div class="nav-group">
+      <span class="group-title">Company</span>
+      <a href="/mission/">Mission</a>
+      <a href="/careers/">Careers</a>
+    </div>
+  </div>
+</nav>
+
+<div class="app-background">
+    <app-root>
+        <!-- Hero Section 1: Starship -->
+        <div class="section">
+            <span class="video-wrapper full-video">
+                <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/20260522_Starship_Flight12_web1920_v2_71d68b5ee9.mp4"></video>
+            </span>
+            <div class="section-inner">
+                <div class="inner-left-bottom">
+                    <h2 class="reveal-header">Starship's Twelfth Flight</h2>
+                    <div class="reveal-button">
+                        <a class="btn" href="/launches/">
+                            <span class="hover"></span>
+                            <span class="text">Watch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section 2: Multiplanetary (Inspected uid 591) -->
+        <div id="section-0" class="section">
+            <span class="video-wrapper full-video">
+                <video autoplay loop muted playsinline src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4"></video>
+            </span>
+            <div class="section-inner">
+                <div class="hero inner-left-bottom">
+                    <h2 class="reveal-header">Making life multiplanetary</h2>
+                    <p class="reveal-subheader">SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</p>
+                    <div class="reveal-button">
+                        <a class="btn" href="/human-spaceflight/mars/">
+                            <span class="hover"></span>
+                            <span class="text">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </app-root>
+    </app-root>
+    </div>
+    </body>
+</html>
